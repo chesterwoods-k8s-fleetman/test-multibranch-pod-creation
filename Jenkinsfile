@@ -17,7 +17,7 @@ pipeline {
     stage('Run maven') {
       steps {
          echo 'Hello World' 
-         sh 'kubectl get all'         
+         sh 'kubectl apply -f test-pod.yaml'         
       }
     }
   }
