@@ -16,7 +16,8 @@ pipeline {
   stages {
     stage('Run maven') {
       steps {
-         echo 'Hello World'
+         echo 'Hello World' 
+         sh 'kubectl get all'         
       }
     }
   }
